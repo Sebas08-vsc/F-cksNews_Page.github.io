@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="F*ckNews - Noticias, sátira, cultura y productos oficiales." />
+    <meta name="author" content="Marentess" />
+    <meta property="og:title" content="F*ckNews - Noticias fuera de lo común" />
+    <meta property="og:image" content="./img/icon.jpeg" />
+    <meta property="og:description" content="Descubre los capítulos, canciones y productos oficiales del noticiero más irreverente de Colombia." />
+
+    <title>F*ckNews</title>
+    <link rel="icon" href="./img/icon.jpeg" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Menú principal">
+            <img src="./img/icon.jpeg" alt="Logo de F*ckNews" class="logo" />
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#capitulos">Capítulos</a>
+                <a href="#tienda">Tienda</a>
+            </div>
+            <div id="carrito-icono" role="button" aria-label="Abrir carrito">🛒 <span id="contador-carrito">0</span></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Lo nuevo de F*ckNews</h1>
+            <h2>La Canción de Camilo Pardo y Camilo Sánchez</h2>
+            <a href="https://www.youtube.com/watch?v=3fwHX3bWekQ" target="_blank" rel="noopener noreferrer">
+                <img src="./img/cancion.jpg" alt="Imagen de la canción de F*ckNews en YouTube" />
+            </a>
+            <p>Haz clic en la imagen para escucharla en YouTube. La letra tiene detalles reales que no todos se atreven a contar.</p>
+        </section>
+
+        <section id="pantalla-grande">
+            <h2>F*ckNews en Pantalla Grande</h2>
+            <a href="https://www.youtube.com/watch?v=yNafQbb8oEQ" target="_blank" rel="noopener noreferrer">
+                <img class="photo" src="./img/pantalla_grande.jpg" alt="Capítulo en pantalla grande, Sidney" />
+            </a>
+            <p>Una película documental que explora el impacto cultural de F*ckNews. Clic en la imagen para ver el tráiler.</p>
+        </section>
+
+        <section id="capitulos">
+            <h2>Más Capítulos</h2>
+            <div class="more">
+                <article class="card">
+                    <img src="./img/primer_capitulo.jpeg" alt="Imagen del primer capítulo de F*ckNews" />
+                    <div class="card_content">
+                        <h3>Primer Capítulo</h3>
+                        <p>El inicio de esta aventura. Desde el primer día se notó que este no sería un noticiero común.</p>
+                        <a href="https://www.youtube.com/watch?v=TlkGDAvUau4" target="_blank" rel="noopener noreferrer">Ver Capítulo</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/se_acabo.jpeg" alt="Imagen del último capítulo de F*ckNews" />
+                    <div class="card_content">
+                        <h3>Se Acabó F*ckNews</h3>
+                        <p>Un episodio lleno de comedia y emoción. La actitud de los presentadores es lo que lo hace especial.</p>
+                        <a href="https://www.youtube.com/watch?v=LXWzkTIR-T8" target="_blank" rel="noopener noreferrer">Ver Capítulo</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/movistar.jpeg" alt="Imagen del evento F*ckNews en el Movistar Arena" />
+                    <div class="card_content">
+                        <h3>Movistar Arena</h3>
+                        <p>Un evento épico con miles de asistentes. Superó todas las expectativas de sus seguidores.</p>
+                        <a href="https://www.youtube.com/watch?v=HQkrbWJAcHA" target="_blank" rel="noopener noreferrer">Ver Capítulo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tienda" class="store-section">
+            <h2>Tienda</h2>
+            <div class="store">
+                <article class="product">
+                    <img src="./img/pocillo.jpeg" alt="Pocillo oficial F*ckNews" />
+                    <h3>Pocillo F*ckNews</h3>
+                    <p>$25.000 COP</p>
+                    <p>⭐⭐⭐⭐☆ (12 opiniones)</p>
+                    <button aria-label="Agregar pocillo al carrito">Comprar</button>
+                </article>
+                <article class="product">
+                    <img src="./img/gorra.jpeg" alt="Gorra negra F*ckNews" />
+                    <h3>Gorra Negra</h3>
+                    <p>$40.000 COP</p>
+                    <p>⭐⭐⭐⭐⭐ (21 opiniones)</p>
+                    <button aria-label="Agregar gorra al carrito">Comprar</button>
+                </article>
+                <article class="product">
+                    <img src="./img/camiseta.jpeg" alt="Camiseta oficial F*ckNews" />
+                    <h3>Camiseta Oficial</h3>
+                    <p>$50.000 COP</p>
+                    <p>⭐⭐⭐⭐☆ (9 opiniones)</p>
+                    <button aria-label="Agregar camiseta al carrito">Comprar</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Marentess - Todos los derechos reservados</p>
+    </footer>
+
+    <div id="modal-carrito" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-carrito">
+        <div class="modal-contenido">
+            <span class="cerrar" aria-label="Cerrar carrito">&times;</span>
+            <h3 id="titulo-carrito">Tu carrito</h3>
+            <ul id="lista-carrito"></ul>
+            <button id="finalizar-compra">Finalizar compra</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast" role="alert">Producto agregado al carrito 🛒</div>
+</body>
+</html>
